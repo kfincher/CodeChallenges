@@ -1,9 +1,31 @@
+/*
+	Name: only
+	Author: Kameron Fincher
+	Description: Reverses built in strings
+	I.E. Command: java Inversion dLROW YM sI HsEt
+	
+	Instruction: 
+		Write a recursive function that takes a string input and returns the string in a reversed case and order.
+
+		Examples
+		invert("dLROW YM sI HsEt") ➞ "TeSh iS my worlD"
+
+		invert("ytInIUgAsnOc") ➞ "CoNSaGuiNiTY"
+
+		invert("step on NO PETS") ➞ "step on NO PETS"
+
+		invert("XeLPMoC YTiReTXeD") ➞ "dExtErIty cOmplEx"
+*/
 class Inversion{
 	public static void main(String[] args){
-		System.out.println(invert("dLROW YM sI HsEt"));
-		System.out.println(invert("ytInIUgAsnOc"));
-		System.out.println(invert("step on NO PETS"));
-		System.out.println(invert("XeLPMoC YTiReTXeD"));
+		String concat = "";
+		for(int i = 0;i<args.length;i++){
+			concat+= args[i];
+			if(i!=args.length-1){
+				concat+=" ";
+			}
+		}
+		System.out.println(invert(concat));
 	}
 	
 	public static String invert(String temp){
