@@ -1,26 +1,26 @@
-import java.util.Arrays;
 /*
-	Weekly Coding Challenge:
-
-	Given array of distinct integers, print all permutations of the array.
-	For example :
-	array : [10, 20, 30]
-
-	Permutations are :
-
-	[10, 20, 30]
-	[10, 30, 20]
-	[20, 10, 30]
-	[20, 30, 10]
-	[30, 10, 20]
-	[30, 20, 10]
-
 	Name: Permutations
 	Author: Kameron Fincher
 	Description gives permutation based on input array
 	I.E. Command: java Permutation 10 20 30
+	
+	Instructions:
+		Weekly Coding Challenge:
 
+		Given array of distinct integers, print all permutations of the array.
+		For example :
+		array : [10, 20, 30]
+
+		Permutations are :
+
+		[10, 20, 30]
+		[10, 30, 20]
+		[20, 10, 30]
+		[20, 30, 10]
+		[30, 10, 20]
+		[30, 20, 10]
 */
+import java.util.Arrays;
 class Permutations{
 	public static void main(String[] args){
 		int[] unalteredArr = new int[args.length];
