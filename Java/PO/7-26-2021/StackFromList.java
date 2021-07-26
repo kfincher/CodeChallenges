@@ -25,7 +25,7 @@ class StackFromList{
 		StackList.print();
 		
 		// 4
-		System.out.println(StackList.peek());
+		System.out.println("Head = "+StackList.peek() + ", Size = " + StackList.size);
 		
 		StackList.pop();
 		StackList.pop();
@@ -40,6 +40,6 @@ class StackFromList{
 		
 		// 2, 1, 0
 		StackList.print();
-		
+		System.out.println("Size = "+StackList.size);
 	}	
 }
